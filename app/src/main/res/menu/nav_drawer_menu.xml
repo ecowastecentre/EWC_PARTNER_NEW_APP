@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/textViewProfile"
+
+        android:background="@android:color/white"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:gravity="fill_vertical"
+        android:title=" Profile"
+        />
+
+    <item
+        android:id="@+id/textViewAddcompany"
+
+        android:icon="@drawable/ic_baseline_home_work_24"
+        android:gravity="fill_vertical"
+        android:title="  Add Company"
+        />
+
+    <item
+        android:id="@+id/textViewCredit"
+
+        android:icon="@drawable/ic_baseline_money_24"
+        android:gravity="fill_vertical"
+        android:title="  Credit Balance"
+
+        />
+
+    <item
+        android:id="@+id/textViewContactUs"
+
+        android:icon="@drawable/ic_baseline_call_24"
+        android:gravity="fill_vertical"
+        android:title="  Contact Us"
+        />
+
+    <item
+        android:id="@+id/textViewPrivacyPolicy"
+
+        android:icon="@drawable/ic_baseline_policy_24"
+        android:gravity="fill_vertical"
+        android:title="  Privacy Policy"
+        />
+
+
+
+    <item
+        android:id="@+id/textViewReferFreind"
+        android:icon="@drawable/ic_baseline_share_24"
+
+        android:title="  Refer Friend"
+        />
+    <item
+        android:id="@+id/TextviewLogout"
+
+        android:icon="@drawable/ic_baseline_person_outline_24"
+        android:gravity="fill_vertical"
+        android:title="  Logout"
+        />
+
+</menu>

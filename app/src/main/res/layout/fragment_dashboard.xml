@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/MintCream"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:padding="14dp"
+            android:rowCount="7">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center"
+                        android:text="Scheduled PickUp"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimary"></TextView>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="8dp">
+                <!-- app:cardElevation="8dp"-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="137dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="  Arjumand"></TextView>
+
+                        <TextView
+                            android:layout_width="226dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text=" 12345"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="137dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:hint="  16/12/2020 "
+                            android:inputType="datetime"></TextView>
+
+                        <TextView
+                            android:layout_width="113dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text=" 8AM - 2PM "></TextView>
+
+                        <TextView
+                            android:layout_width="113dp"
+                            android:layout_height="40dp"
+                            android:gravity="center_vertical"
+                            android:text="  Whitefield"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="137dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="  Estimated Amount"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="1000"></TextView>
+
+                        <TextView
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text=" Rs"></TextView>
+
+                        <TextView
+                            android:layout_width="111dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="In Process"></TextView>
+
+                    </LinearLayout>
+
+
+                    <!-- <NumberPicker
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@color/MintCream"/>-->
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="137dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="  PickUp Id"></TextView>
+
+                        <EditText
+                            android:layout_width="225dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical">
+                            android:text="xxxxx">
+                        </EditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="137dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:hint="  20/12/2020 "
+                            android:inputType="datetime"></TextView>
+
+                        <TextView
+                            android:layout_width="113dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text=" 8AM - 2PM "></TextView>
+
+                        <TextView
+                            android:layout_width="113dp"
+                            android:layout_height="40dp"
+                            android:gravity="center_vertical"
+                            android:text="  Whitefield"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="137dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="  Estimated Amount"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="1000"></TextView>
+
+                        <TextView
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text=" Rs"></TextView>
+
+                        <TextView
+                            android:layout_width="111dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Upcoming"></TextView>
+
+                    </LinearLayout>
+
+
+                    <!-- <NumberPicker
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@color/MintCream"/>-->
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="137dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="  PickUp Id"></TextView>
+
+                        <EditText
+                            android:layout_width="225dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="xxxxx"></EditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="137dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:hint="  20/12/2020 "
+                            android:inputType="datetime"></TextView>
+
+                        <TextView
+                            android:layout_width="113dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text=" 3PM - 8PM "></TextView>
+
+                        <TextView
+                            android:layout_width="113dp"
+                            android:layout_height="40dp"
+                            android:gravity="center_vertical"
+                            android:text="  Whitefield"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="137dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="  Estimated Amount"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="1000"></TextView>
+
+                        <TextView
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text=" Rs"></TextView>
+
+                        <TextView
+                            android:layout_width="111dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Upcoming"></TextView>
+
+                    </LinearLayout>
+
+
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:text="  Whitefield"></TextView>-->
+
+
+                    <!-- <NumberPicker
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@color/MintCream"/>-->
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="137dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="  PickUp Id"></TextView>
+
+                        <EditText
+                            android:layout_width="225dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="xxxxx"></EditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="137dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:hint="  16/12/2020 "
+                            android:inputType="datetime"></TextView>
+
+                        <TextView
+                            android:layout_width="113dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text=" 8AM - 2PM "></TextView>
+
+                        <TextView
+                            android:layout_width="113dp"
+                            android:layout_height="40dp"
+                            android:gravity="center_vertical"
+                            android:text="  Whitefield"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="137dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="  Estimated Amount"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="1000"></TextView>
+
+                        <TextView
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text=" Rs"></TextView>
+
+                        <TextView
+                            android:layout_width="111dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Upcoming"></TextView>
+
+                    </LinearLayout>
+
+
+                    <!-- <NumberPicker
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@color/MintCream"/>-->
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="137dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="  PickUp Id"></TextView>
+
+                        <EditText
+                            android:layout_width="225dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="xxxxx"></EditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="137dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:hint="  16/12/2020 "
+                            android:inputType="datetime"></TextView>
+
+                        <TextView
+                            android:layout_width="113dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text=" 8AM - 2PM "></TextView>
+
+                        <TextView
+                            android:layout_width="113dp"
+                            android:layout_height="40dp"
+                            android:gravity="center_vertical"
+                            android:text="  Whitefield"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="137dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="  Estimated Amount"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="1000"></TextView>
+
+                        <TextView
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text=" Rs"></TextView>
+
+                        <TextView
+                            android:layout_width="111dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Upcoming"></TextView>
+
+                    </LinearLayout>
+
+
+                    <!-- <NumberPicker
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@color/MintCream"/>-->
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="137dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="  PickUp Id"></TextView>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="xxxxx"></EditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="137dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:hint="  16/12/2020 "
+                            android:inputType="datetime"></TextView>
+
+                        <TextView
+                            android:layout_width="113dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text=" 8AM - 2PM "></TextView>
+
+                        <TextView
+                            android:layout_width="113dp"
+                            android:layout_height="40dp"
+                            android:gravity="center_vertical"
+                            android:text="  Whitefield"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="137dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="  Estimated Amount"></TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="1000"></TextView>
+
+                        <TextView
+                            android:layout_width="81dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text=" Rs"></TextView>
+
+                        <TextView
+                            android:layout_width="111dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Upcoming"></TextView>
+
+                    </LinearLayout>
+
+
+                    <!-- <NumberPicker
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@color/MintCream"/>-->
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

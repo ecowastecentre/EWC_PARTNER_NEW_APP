@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Welcome EWC Partner</string>
+    <string name="title_activity_main2">Welcome Arjumand</string>
+    <string name="title_home">New PickUp</string>
+    <string name="title_dashboard">Scheduled Pickup</string>
+    <string name="title_notifications">Completed Pickup</string>
+    <string name="title_missed">Missed Pickup</string>
+    <string name="title_activity_profile_completion">Welcome EWC Partner</string>
+    <string name="title_activity_SignUp">Welcome EWC Partner</string>
+    <string name="title_activity_ThankYou">Welcome EWC Partner</string>
+    <string name="title_activity_forgotpassword">Welcome EWC Partner</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>

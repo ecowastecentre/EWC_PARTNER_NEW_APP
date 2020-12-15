@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompanyDetailFragment"
+    android:background="@color/MintCream">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Add Company Details"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+
+
+                <LinearLayout
+                    android:layout_width="360dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <!--<TextView
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Company Name"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:hint="autofill Name 4m signUp screen">
+
+                        <!--<com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                             />-->
+                    </TextView>
+
+                </LinearLayout>
+                <EditText
+                    android:layout_width="360dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Enter Registration number">
+
+
+                </EditText>
+
+                <EditText
+                    android:layout_width="360dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Enter GST number">
+
+                </EditText>
+                <LinearLayout
+                    android:layout_width="360dp"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+
+                    android:text="Registration Date"
+                    android:textSize="18sp"
+                    ></TextView>
+
+                <EditText
+                    android:id="@+id/editRegistrationDate"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+
+                    android:hint="registration date"
+                    android:inputType="date" />
+                </LinearLayout>
+                /*clikable calender icon on right*/
+
+                <TextView
+                    android:layout_width="360dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:text="Company Address"
+                    android:textSize="18sp"
+                    ></TextView>
+
+                <CheckBox
+
+                    android:id="@+id/simpleCheckedTextView"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:checked="true"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:text="Same as Permanent Address">
+
+                    <!--android:checkMark="@drawable/ic_baseline_check_circle_24"-->
+
+                </CheckBox>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="360dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="House no,Apartment name,Street" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="360dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Landmark" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="360dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <EditText
+                            android:layout_width="180dp"
+                            android:layout_height="match_parent"
+
+                            android:hint="Region List">
+                    </EditText>
+
+                    <EditText
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+
+                        android:hint="Pincode number">
+
+                    </EditText>
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:hint="City List" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="150dp"
+                            android:layout_height="46dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="8dp"
+                            android:hint="State List" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                </LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="360dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+
+                        android:hint="City List">
+                    </EditText>
+
+                    <EditText
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+
+                        android:hint="State List">
+
+                    </EditText>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="360dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:linksClickable="true"
+                    android:text="Deals in Trash"
+                    android:textSize="18sp"
+                    ></TextView>
+
+                <ListView
+                    android:id="@+id/Trashtypelist"
+                    android:layout_width="360dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content">
+
+                    <!--
+                    <CheckedTextView
+                        android:id="@+id/checkedTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CheckedTextView" />
+
+                        <CheckBox
+                        android:id="@+id/checkBox4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mixed Recyclable" />
+
+                        <CheckBox
+                        android:id="@+id/checkBox4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mixed Recyclable item" />
+
+                        <CheckBox
+                        android:id="@+id/checkBox4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="E-waste" />
+
+                        <CheckBox
+                        android:id="@+id/checkBox4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Newspaper & books" />
+
+                        <CheckBox
+                        android:id="@+id/checkBox4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="cardboard" />
+
+                        <CheckBox
+                        android:id="@+id/checkBox4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Plastic" />
+
+                        <CheckBox
+                        android:id="@+id/checkBox4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Metal" />
+
+                        <CheckBox
+                        android:id="@+id/checkBox4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Big furniture" />
+
+
+                        -->
+                </ListView>
+
+
+                <TextView
+                    android:layout_width="333dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:linksClickable="true"
+                    android:text="Need any help?"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+
+              <!--  <Button
+                    android:id="@+id/button"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#1D7A1D"
+                    android:gravity="center"
+                    android:text="Confirm and Save"
+                    android:textColor="#f8f8ff"
+                    android:textSize="20sp" />-->
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+</FrameLayout>
