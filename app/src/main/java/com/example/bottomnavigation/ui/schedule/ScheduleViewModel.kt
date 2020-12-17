@@ -1,13 +1,13 @@
-package com.example.bottomnavigation.ui.dashboard
+package com.example.bottomnavigation.ui.schedule
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class DashboardViewModel : ViewModel() {
+class ScheduleViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is dashboard Fragment"
+        value = "This is schedule Fragment"
     }
     val text: LiveData<String> = _text
 }
