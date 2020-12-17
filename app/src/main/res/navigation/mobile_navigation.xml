@@ -19,9 +19,9 @@
 
     <fragment
     android:id="@+id/navigation_notifications"
-    android:name="com.example.bottomnavigation.ui.notifications.NotificationsFragment"
+    android:name="com.example.bottomnavigation.ui.completed.CompletedFragment"
     android:label="@string/title_activity_main2"
-    tools:layout="@layout/fragment_notifications" />
+    tools:layout="@layout/fragment_completed" />
 
     <fragment
         android:id="@+id/navigation_missed"

@@ -1,13 +1,13 @@
-package com.example.bottomnavigation.ui.notifications
+package com.example.bottomnavigation.ui.completed
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class NotificationsViewModel : ViewModel() {
+class CompletedViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+        value = "This is completed Fragment"
     }
     val text: LiveData<String> = _text
 }

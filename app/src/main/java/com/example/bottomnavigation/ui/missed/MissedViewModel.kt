@@ -1,4 +1,4 @@
-package com.example.bottomnavigation.ui.notifications
+package com.example.bottomnavigation.ui.completed
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
