@@ -13,7 +13,7 @@ import androidx.lifecycle.ViewModelProviders
 import com.example.bottomnavigation.NewPickUpDetail
 import com.example.bottomnavigation.R
 import com.example.bottomnavigation.SchedulePickupDetail
-import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_newpickup.*
 
 class DashboardFragment : Fragment() {
 
