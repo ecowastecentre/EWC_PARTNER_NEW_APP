@@ -5,34 +5,26 @@ import android.app.Activity
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
-import android.os.Bundle
-import com.google.android.material.tabs.TabLayout
-import androidx.viewpager.widget.ViewPager
 import androidx.appcompat.app.AppCompatActivity
-import android.widget.Button
+import android.os.Bundle
 import android.widget.Toast
-import com.example.bottomnavigation.ui.main.SectionsPagerAdapter
-
-import com.example.bottomnavigation.ui.main.ProfileDetail
 import kotlinx.android.synthetic.main.activity_my_profile_page.*
 
-import kotlinx.android.synthetic.main.activity_profile_completion.*
-
-class ProfileCompletion : AppCompatActivity() {
-
-
-    private lateinit var btnSubmitForVerification: Button
+class myProfilePage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profile_completion)
+        setContentView(R.layout.activity_my_profile_page)
 
-        setprofileimage.setOnClickListener {
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        profileimage.setOnClickListener {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) ==
                     PackageManager.PERMISSION_DENIED) {
 
                     val permission = arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE);
-                    requestPermissions(permission, ProfileCompletion.PERMISSION_CODE);
+                    requestPermissions(permission, PERMISSION_CODE);
                 }
                 else {
                     pickImageFromGallery();
@@ -41,25 +33,6 @@ class ProfileCompletion : AppCompatActivity() {
                 pickImageFromGallery();
             }
         }
-        val fragmentAdapter = ProfileDetail(supportFragmentManager)
-        view_pager.adapter = fragmentAdapter
-
-        tabs.setupWithViewPager(view_pager)
-     /*   val fab: FloatingActionButton = findViewById(R.id.fab)
-
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }*/
-
-        btnSubmitForVerification= findViewById(R.id.btnSubmitForVerification)
-        btnSubmitForVerification.setOnClickListener{
-            val intent = Intent(this, ThankYou::class.java)
-            startActivity(intent)
-            finish()
-        }
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
     }
 

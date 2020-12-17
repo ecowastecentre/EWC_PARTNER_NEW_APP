@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Read details from Personal Detail & company Detail Layout to show
+     on this screen-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/MintCream"
+    tools:context=".myProfilePage">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/imgUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/profileimage"
+
+                    android:adjustViewBounds="true"
+
+                    android:padding="3dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_launcher_foreground"></de.hdodenhof.circleimageview.CircleImageView>
+
+               <!-- <ImageButton
+                    android:id="@+id/img_pick_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="31dp"
+                    android:layout_alignEnd="@+id/profileimage"
+                    android:layout_alignRight="@+id/profileimage"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginRight="7dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_baseline_edit_24" />-->
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/MyProfile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:gravity="center"
+                android:text=" My Profile"
+
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+
+                <TextView
+                    android:id="@+id/viewPersonalDetail"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+
+                    android:gravity="fill_vertical"
+                    android:text=" Personal Detail"
+
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <!--<LinearLayout
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+
+                android:layout_height="36dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                >-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/viewName"
+                    android:layout_width="182dp"
+                    android:layout_height="match_parent"
+
+                    android:background="@android:color/white"
+                    android:gravity="fill_vertical"
+                    android:text=" Name"
+
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/ReadName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:gravity="fill_vertical"
+                    android:text=" Name"
+                    android:textSize="13sp"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/viewAddress"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="fill_vertical"
+                android:text=" Permanent Address"
+                android:textSize="16sp"
+
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/ReadAddress1"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="fill_vertical"
+                android:text=" houseno,apartment,street"
+                android:textSize="13sp"
+
+                />
+            <EditText
+                android:id="@+id/ReadAddress2"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="fill_vertical"
+                android:text=" City,State,Pincode"
+
+                android:textSize="13sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/viewDOB"
+                    android:layout_width="182dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:gravity="fill_vertical"
+                    android:text=" Date Of Birth"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/ReadDOB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:gravity="fill_vertical"
+                    android:text=" 04/08/1980"
+
+                    android:textSize="13sp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/viewPAN"
+                    android:layout_width="182dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:gravity="fill_vertical"
+                    android:text=" PAN"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/ReadPAN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:gravity="fill_vertical"
+                    android:text=" XXXXX7896X"
+                    android:textSize="13sp"
+
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCompany"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+
+                android:layout_height="36dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+
+                <TextView
+                    android:id="@+id/viewCompanyDetail"
+                    android:layout_width="347dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:gravity="fill_vertical"
+                    android:text=" Company Detail"
+
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/viewCompanyName"
+                    android:layout_width="182dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:gravity="fill_vertical"
+                    android:text=" CompanyName"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ReadCompanyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:background="@android:color/white"
+                    android:gravity="fill_vertical"
+                    android:text=" Company Name"
+
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/viewCompanyAddress"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="fill_vertical"
+                android:text=" Company Address"
+                android:textSize="16sp"
+
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/ReadCompanyAddress1"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="fill_vertical"
+                android:text=" houseno,apartment,street"
+                android:textSize="13sp"
+
+                />
+            <EditText
+                android:id="@+id/ReadCompanyAddress2"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="fill_vertical"
+                android:text=" City,State,Pincode"
+
+                android:textSize="13sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/viewRegistrationNumber"
+                    android:layout_width="182dp"
+                    android:layout_height="36dp"
+
+                    android:background="@android:color/white"
+                    android:gravity="fill_vertical"
+                    android:text=" Registration Number"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/ReadRegistrationNumber"
+                    android:layout_width="347dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:gravity="fill_vertical"
+                    android:text=" XX43RCCC"
+
+                    android:textSize="13sp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/viewGSITN"
+                    android:layout_width="182dp"
+                    android:layout_height="match_parent"
+
+                    android:background="@android:color/white"
+                    android:gravity="fill_vertical"
+                    android:text=" GST"
+                    android:textSize="16sp"
+
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/ReadGSTIN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:gravity="fill_vertical"
+                    android:text=" XXXXX7896X"
+                    android:textSize="13sp"
+
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/viewTrashType"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="fill_vertical"
+                android:text=" Deals in Trash Type"
+                android:textSize="16sp"
+
+                android:textStyle="bold" />
+
+            <!--read  trash type List chosen before while filling company details-->
+
+            <ListView
+                android:id="@+id/Trashtype_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

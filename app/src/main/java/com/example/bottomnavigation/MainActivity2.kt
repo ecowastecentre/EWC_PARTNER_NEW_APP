@@ -1,5 +1,6 @@
 package com.example.bottomnavigation
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
@@ -77,6 +78,7 @@ class MainActivity2 : AppCompatActivity() {
     lateinit var bottomNavigationview : BottomNavigationView
     lateinit var navController : NavController
     lateinit var toggle : ActionBarDrawerToggle
+    lateinit var textViewProfile : MenuItem
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -120,12 +122,25 @@ class MainActivity2 : AppCompatActivity() {
 
 
         navigationView.setNavigationItemSelectedListener {
-            when(it.itemId)
+           when(it.itemId)
             {
-                R.id.textViewProfile -> Toast.makeText(applicationContext,"clicked Profile",Toast.LENGTH_SHORT).show()
+                R.id.textViewContactUs -> Toast.makeText(applicationContext,"clicked ContactUs",Toast.LENGTH_SHORT).show()
+               /* R.id.textViewProfile ->  val textViewProfile = Intent(this, myProfilePage::class.java)
+                startActivity(intent)
+                        finish()*/
+
+
+
+
+
+
             }
             true
+
+
+
         }
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

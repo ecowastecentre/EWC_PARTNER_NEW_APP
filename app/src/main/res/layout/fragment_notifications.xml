@@ -7,14 +7,25 @@
     android:background="@color/MintCream"
     tools:context=".ui.notifications.NotificationsFragment">
 
-
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Completed PickUp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
 
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/pagetitle">
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
 
         <GridLayout
             android:layout_width="match_parent"
@@ -25,7 +36,7 @@
             android:rowCount="7">
 
 
-            <androidx.cardview.widget.CardView
+            <!-- <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
@@ -52,10 +63,11 @@
 
 
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>-->
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/base_cardviewcompleted1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"

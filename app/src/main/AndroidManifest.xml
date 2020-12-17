@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bottomnavigation">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,22 +11,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".DateTimeSlot"></activity>
+        <activity android:name=".ReschedulePickUp" />
+        <activity android:name=".CancelPickUp" />
+        <activity android:name=".fillActualUponCompleting"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".MissedPickUpDetail" />
+        <activity android:name=".CompletedPickUpDetail" />
+        <activity android:name=".SchedulePickupDetail" />
+        <activity android:name=".NewPickUpDetail" />
+        <activity android:name=".ContactUsActivity" />
         <activity
             android:name=".ProfileCompletion"
             android:label="@string/title_activity_profile_completion"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".SignUp"
             android:label="@string/title_activity_SignUp"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".ThankYou"
             android:label="@string/title_activity_ThankYou"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".forgotpassword"
             android:label="@string/title_activity_forgotpassword"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".myProfilePage"
+            android:label="@string/title_activity_forgotpassword"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".MainActivity2"
             android:label="@string/title_activity_main2" />

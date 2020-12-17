@@ -11,6 +11,38 @@
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/profileLL"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/setprofileimage"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+
+                android:src="@drawable/ic_launcher_foreground"/>
+            <!--image upload option-->
+
+
+            <TextView
+                android:id="@+id/PartnerRegistration"
+                android:layout_width="302dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/white"
+                android:gravity="center_horizontal"
+                android:text="Hello Partner_name you are few step away to become our Partner"
+
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
       <!--  <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"

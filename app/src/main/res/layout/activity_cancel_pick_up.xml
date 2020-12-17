@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CancelPickUp"
+    android:background="@color/MintCream"
+    android:orientation="vertical">
+
+<TextView android:id="@+id/CancelReason"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp"
+
+    android:text="Select your reason to cancel pickup request"
+    android:textColor="@color/colorPrimary"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        >
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="On Leave"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Accident occur"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Picking other order"/>
+
+    </RadioGroup>
+
+
+    <!--make it enable upon choosing reason-->
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/button_background"
+        android:text="Cancel"
+        android:textColor="@color/MintCream"
+        android:textSize="18sp"></Button>
+
+
+</LinearLayout>

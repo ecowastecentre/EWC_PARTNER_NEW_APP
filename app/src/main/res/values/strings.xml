@@ -13,4 +13,12 @@
     <string name="tab_text_2">Tab 2</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="Column1">Scrap</string>
+    <string name="Column2">Weight in Kg/ Quantity</string>
+    <string name="Column3">Rates in Rs</string>
+    <string name="Column4">Price</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>
