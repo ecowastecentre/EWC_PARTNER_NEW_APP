@@ -520,7 +520,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
 
-                    android:text="9"
+
                     android:textColor="@color/Green" />
 
 
@@ -552,7 +552,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
 
-                    android:text="350"
+
                     android:textColor="@color/Green" />
 
 
@@ -584,7 +584,6 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
 
-                    android:text="10"
                     android:textColor="@color/Green" />
 
 
@@ -617,7 +616,6 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
 
-                    android:text="30"
                     android:textColor="@color/Green" />
 
 

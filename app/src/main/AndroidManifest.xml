@@ -12,10 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".DateTimeSlot"></activity>
-        <activity android:name=".ReschedulePickUp" />
+        <activity android:name=".ReschedulePickUp"
+            android:parentActivityName=".SchedulePickupDetail"/>
         <activity android:name=".CancelPickUp" />
         <activity android:name=".fillActualUponCompleting"
-            android:theme="@style/AppTheme"/>
+            android:parentActivityName=".SchedulePickupDetail"
+            />
         <activity android:name=".MissedPickUpDetail" />
         <activity android:name=".CompletedPickUpDetail" />
         <activity android:name=".SchedulePickupDetail" />

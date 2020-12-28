@@ -16,6 +16,9 @@ class fillActualUponCompleting : AppCompatActivity() {
 
     private val dateFormat = SimpleDateFormat("dd MMM yyyy", Locale.US)
     private val timeFormat = SimpleDateFormat("hh:mm a", Locale.US)
+
+
+
 /*
     var dialogTheme: Int? = null
  var fullscreenTheme: Int? = null
@@ -23,6 +26,11 @@ class fillActualUponCompleting : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fill_actual_upon_completing)
+
+
+
+
+
 
     val now = Calendar.getInstance()
     btn_date.text = dateFormat.format(now.time)
@@ -56,22 +64,9 @@ class fillActualUponCompleting : AppCompatActivity() {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
 
 /*  fun openDatePicker(view: View?) {
        val newFragment: DialogFragment = DatePickerFragment()
