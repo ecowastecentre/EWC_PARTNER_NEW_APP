@@ -11,13 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DateTimeSlot"></activity>
-        <activity android:name=".ReschedulePickUp"
-            android:parentActivityName=".SchedulePickupDetail"/>
+        <activity android:name=".CreditBalance"></activity>
+        <activity android:name=".PrivacyPolicy" />
+        <activity android:name=".AddCompany" />
+        <activity android:name=".ReferFriend" />
+        <activity android:name=".DateTimeSlot" />
+        <activity
+            android:name=".ReschedulePickUp"
+            android:parentActivityName=".SchedulePickupDetail" />
         <activity android:name=".CancelPickUp" />
-        <activity android:name=".fillActualUponCompleting"
-            android:parentActivityName=".SchedulePickupDetail"
-            />
+        <activity
+            android:name=".fillActualUponCompleting"
+            android:parentActivityName=".SchedulePickupDetail" />
         <activity android:name=".MissedPickUpDetail" />
         <activity android:name=".CompletedPickUpDetail" />
         <activity android:name=".SchedulePickupDetail" />
@@ -40,7 +45,7 @@
             android:label="@string/title_activity_forgotpassword"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".myProfilePage"
+            android:name=".MyProfilePage"
             android:label="@string/title_activity_forgotpassword"
             android:theme="@style/AppTheme" />
         <activity
