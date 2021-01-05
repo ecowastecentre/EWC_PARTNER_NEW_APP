@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Welcome EWC Partner</string>
+    <string name="facebook_app_id">2514719512154004</string>
+    <string name="fb_login_protocol_scheme">fb2514719512154004</string>
+    
+
     <string name="title_activity_main2">Welcome Arjumand</string>
     <string name="title_home">New PickUp</string>
     <string name="title_dashboard">Scheduled Pickup</string>
